@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  color: white; /* letras blancas */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #ffcc00; /* color al pasar mouse */
+}

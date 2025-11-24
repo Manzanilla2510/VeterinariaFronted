@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; /* separa logo y links */
+  align-items: center; /* centra verticalmente */
+  padding: 12px 25px;
+  background-color: #000; /* negro */
+  border-bottom: 1px solid #444; /* opcional, gris oscuro */
+}
+
+.navbar-logo {
+  order: 2; /* hace que el logo quede a la derecha */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  color: #fff; /* letras blancas de los links */
+}

@@ -1,0 +1,25 @@
+.formulario-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.formulario-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formulario-row input,
+.formulario-row select,
+.formulario-row textarea {
+  width: 200px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}

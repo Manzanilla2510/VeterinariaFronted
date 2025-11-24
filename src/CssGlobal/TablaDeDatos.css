@@ -1,0 +1,25 @@
+.tabla-container {
+  display: flex;
+  justify-content: center; /* centra la tabla horizontalmente */
+  margin: 20px 0;
+}
+
+.tabla-datos {
+  border-collapse: collapse;
+  width: 80%;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-size: 18px; /* letra más grande */
+  /*font-weight: 700;  negrita */
+}
+
+.tabla-datos th,
+.tabla-datos td {
+  padding: 12px 16px;
+  border-bottom: 2px solid #000; /* línea interna más gruesa */
+}
+
+.tabla-datos th {
+  background-color: #b5f1ff; /* opcional, suave */
+}
