@@ -8,14 +8,31 @@ export function PlantillaInventario() {
   return (
     <>
       <div>
-        <div>
+        <div
+          style={{
+            padding: "10px",
+            justifyContent: "center",
+            display: "flex",
+          }}
+        >
+          <LabelNombre nombre="Inventario Disponible"></LabelNombre>
+        </div>
+        <div style={{ width: "100%", padding: "35px" }}>
           <LabelNombre nombre="Medicamentos En disposicion"></LabelNombre>
         </div>
-        <TablaDeDatosGenerica lista={datos}></TablaDeDatosGenerica>
-        <div>
+        <div style={{ padding: "15px" }}>
+          <TablaDeDatosGenerica lista={datos}></TablaDeDatosGenerica>
+        </div>
+        <div style={{ width: "100%", padding: "35px" }}>
           <LabelNombre nombre="Herramientas En disposicion"></LabelNombre>
         </div>
-        <TablaDeDatosGenerica lista={datos2}></TablaDeDatosGenerica>
+        <div
+          style={{
+            paddingBottom: "50px",
+          }}
+        >
+          <TablaDeDatosGenerica lista={datos2}></TablaDeDatosGenerica>
+        </div>
       </div>
     </>
   );

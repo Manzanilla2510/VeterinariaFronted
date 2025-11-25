@@ -24,13 +24,13 @@ export function FormularioRevision() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // AQUI VERIFICÁS LO QUE MANDÁS
+
     console.log("Enviando:", form);
 
     PostRevision({
-      FechaRevision: form.FechaRevision, // YYYY-MM-DD
+      FechaRevision: form.FechaRevision, 
       Condicion: form.Condicion,
-      FechaRecuperacion: form.FechaRecuperacion, // YYYY-MM-DD
+      FechaRecuperacion: form.FechaRecuperacion, 
       Diagnostico: form.Diagnostico,
       Temperatura: form.Temperatura,
       PesoActual: form.PesoActual,

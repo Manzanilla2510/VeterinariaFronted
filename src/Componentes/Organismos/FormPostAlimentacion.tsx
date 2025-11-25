@@ -23,14 +23,14 @@ export function FormularioAlimentacion() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log("Enviando Alimentación:", form); // Verificar fecha
+    console.log("Enviando Alimentación:", form); 
 
     PostAlimentacion({
       CodigoAnimal: form.CodigoAnimal,
       NombreAlimento: form.NombreAlimento,
       Tipo: form.Tipo,
       Descripcion: form.Descripcion,
-      Fecha: form.Fecha, // YA ES YYYY-MM-DD
+      Fecha: form.Fecha, 
       Cantidad: form.Cantidad,
       Estado: form.Estado,
     });

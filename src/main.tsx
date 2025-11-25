@@ -9,6 +9,7 @@ import { PlantillaRevisiones } from "./Componentes/Plantillas/PlantillaRevison";
 import { Navbar } from "./Componentes/Organismos/Header";
 import { Footer } from "./Componentes/Organismos/Footer";
 import { PlantillaAlimentacion } from "./Componentes/Plantillas/PlantillaAlimentacion";
+import { PlantillaSolicitudPersonal } from "./Componentes/Plantillas/PlantillaSolicitudPersonal";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/Veterinarios" element={<PlantillaVeterinarios />} />
         <Route path="/Revisiones" element={<PlantillaRevisiones />} />
         <Route path="/Alimentacion" element={<PlantillaAlimentacion />} />
+        <Route path="/Solicitud" element={<PlantillaSolicitudPersonal />} />
       </Routes>
     </BrowserRouter>
     <Footer></Footer>

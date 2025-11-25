@@ -13,9 +13,9 @@ export function BotonObtenerdatos() {
   return (
     <>
       {Estado && (
-        <Alertas mensaje="Datos Guardador correctamente Correctamente"></Alertas>
+        <Alertas mensaje="Se Guaradaron Los Catos Correctamente"></Alertas>
       )}
-      <Boton estado={click} nombre="Guardar Veterinario"></Boton>
+      <Boton estado={click} nombre="Guardar Datos"></Boton>
     </>
   );
 }

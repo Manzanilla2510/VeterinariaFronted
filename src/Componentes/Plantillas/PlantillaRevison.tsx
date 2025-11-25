@@ -6,11 +6,32 @@ export function PlantillaRevisiones() {
   const { datos } = GETRevisiones();
   return (
     <>
-      <div>
+      <div
+        style={{
+          padding: "10px",
+          justifyContent: "center",
+          display: "flex",
+        }}
+      >
         <LabelNombre nombre="Animales En tratamiento"></LabelNombre>
       </div>
-      <TablaDeDatosGenerica lista={datos}></TablaDeDatosGenerica>
-      <FormularioRevision></FormularioRevision>
+      <div>
+        <TablaDeDatosGenerica lista={datos}></TablaDeDatosGenerica>
+      </div>
+      <div>
+        <div
+          style={{
+            padding: "25px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <LabelNombre nombre="Agregue un Animal"></LabelNombre>
+        </div>
+      </div>
+      <div>
+        <FormularioRevision></FormularioRevision>
+      </div>
     </>
   );
 }

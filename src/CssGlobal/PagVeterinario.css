@@ -1,23 +1,39 @@
 .formulario-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
   padding: 2rem;
   box-sizing: border-box;
 }
 
 .formulario-row {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  gap: 10rem;
 }
 
-.formulario-row input,
-.formulario-row select,
-.formulario-row textarea {
-  width: 200px;
+.formulario-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-field {
+  display: flex;
+  align-items: center;
+  gap: 10.5rem;
+}
+
+.formulario-field label {
+  min-width: 120px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.formulario-field input,
+.formulario-field select,
+.formulario-field textarea {
+  flex: 1;
   padding: 0.4rem 0.6rem;
   border-radius: 5px;
   border: 1px solid #ccc;

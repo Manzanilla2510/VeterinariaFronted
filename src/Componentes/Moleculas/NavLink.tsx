@@ -9,6 +9,7 @@ export function NavLink() {
         <Links to="/veterinarios" nombre="Veterinarios" />
         <Links to="/animales" nombre="Animal" />
         <Links to="/alimentacion" nombre="Alimentación" />
+        <Links to="/Solicitud" nombre="Solicitud" />
       </div>
     </>
   );
