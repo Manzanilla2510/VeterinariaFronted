@@ -1,10 +1,8 @@
-import { GetSolicitud } from "../../Servicios/ServicioSolicitud";
 import { LabelNombre } from "../Atomos/label";
+
 import { FormularioSolicitud } from "../Organismos/FormPostSolicitud";
-import { TablaDeDatosGenerica } from "../Organismos/TablaDatos";
 
 export function PlantillaSolicitudPersonal() {
-  const { datos } = GetSolicitud();
   return (
     <>
       <div
