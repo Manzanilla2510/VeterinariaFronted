@@ -4,7 +4,7 @@ export function GETRevisiones() {
   const [datos, setdatos] = useState<Revision[]>([]);
   useEffect(() => {
     const URL =
-      "https://veterinaria-production-5cbc.up.railway.app/api/Revisions/GetRevisiones";
+      "https://veterinaria-production-44a5.up.railway.app/api/Revisions/GetRevisiones";
     // "https://localhost:7248/api/Revisions/GETparasacaruninformesobrelasrevisionesqueseleshacealasvacas";
     fetch(URL)
       .then((respuesta) => respuesta.json())
@@ -16,7 +16,7 @@ export function GETRevisiones() {
 //Falta el post
 export function PostRevision(revision: Revision) {
   const URL =
-    "https://veterinaria-production-5cbc.up.railway.app/api/Revisions/PostRevision";
+    "https://veterinaria-production-44a5.up.railway.app/api/Revisions/PostRevision";
 
   fetch(URL, {
     method: "POST",

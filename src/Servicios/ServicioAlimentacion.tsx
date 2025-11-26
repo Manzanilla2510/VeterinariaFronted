@@ -4,7 +4,7 @@ export function GetAlimentacion() {
   const [datos, setdatos] = useState<Alimentacion[]>([]);
   useEffect(() => {
     const URL =
-      "https://veterinaria-production-5cbc.up.railway.app/api/Alimentacions/GetAlimentacion";
+      "https://veterinaria-production-44a5.up.railway.app/api/Alimentacions/GetAlimentacion";
     fetch(URL)
       .then((respuesta) => respuesta.json())
       .then((datos) => setdatos(datos));
@@ -14,7 +14,7 @@ export function GetAlimentacion() {
 
 export function PostAlimentacion(alimentacion: Alimentacion) {
   const URL =
-    "https://veterinaria-production-5cbc.up.railway.app/api/Alimentacions/PostAlimentacion";
+    "https://veterinaria-production-44a5.up.railway.app/api/Alimentacions/PostAlimentacion";
 
   fetch(URL, {
     method: "POST",
@@ -34,7 +34,7 @@ export function PostAlimentacion(alimentacion: Alimentacion) {
 //delete
 export function DeleteAlimentacion(codigoAnimal: string) {
   const URL =
-    "https://veterinaria-production-5cbc.up.railway.app/api/Alimentacions/DeleteAlimentacion";
+    "https://veterinaria-production-44a5.up.railway.app/api/Alimentacions/DeleteAlimentacion";
 
   fetch(URL, {
     method: "DELETE",

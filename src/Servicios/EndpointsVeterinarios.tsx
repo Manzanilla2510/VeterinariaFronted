@@ -5,7 +5,7 @@ export function GetVeterinarios() {
   const [datos, setdatos] = useState<Veterinario[]>([]);
   useEffect(() => {
     const URL =
-      "https://veterinaria-production-5cbc.up.railway.app/api/Veterinarios/GetVeterinario";
+      "https://veterinaria-production-44a5.up.railway.app/api/Veterinarios/GetVeterinario";
     fetch(URL)
       .then((respuesta) => respuesta.json())
       .then((datos) => setdatos(datos));
@@ -15,7 +15,7 @@ export function GetVeterinarios() {
 
 export function VeterinarioServicioPost(veterinario: VeterinarioPost) {
   const URL =
-    "https://veterinaria-production-5cbc.up.railway.app/api/Veterinarios/PostVeterinario";
+    "https://veterinaria-production-44a5.up.railway.app/api/Veterinarios/PostVeterinario";
   fetch(URL, {
     method: "POST",
     headers: {
@@ -33,7 +33,7 @@ export function VeterinarioServicioPost(veterinario: VeterinarioPost) {
 
 export function DeleteVeterinario(ci: string) {
   const URL =
-    "https://veterinaria-production-5cbc.up.railway.app/api/Veterinarios/DeleteVeterinario";
+    "https://veterinaria-production-44a5.up.railway.app/api/Veterinarios/DeleteVeterinario";
 
   fetch(URL, {
     method: "DELETE",

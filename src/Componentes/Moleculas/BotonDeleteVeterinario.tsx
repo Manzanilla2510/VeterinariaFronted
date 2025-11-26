@@ -10,16 +10,16 @@ export function FormDeleteVeterinario() {
 
   return (
     <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "10px",
-          marginTop: "20px",
-        }}
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "10px",
+        marginTop: "20px",
+      }}
     >
       <input
         type="text"
-        placeholder="Codigo Del Veterinario"
+        placeholder="Ci Del Veterinario"
         value={ci}
         onChange={(e) => setCi(e.target.value)}
         style={{
